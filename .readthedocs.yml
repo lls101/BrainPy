@@ -5,10 +5,18 @@
 # Required
 version: 2
 
+formats:
+  - pdf
+  
 build:
   os: "ubuntu-24.04"
   tools:
     python: "3.13"
+  apt_packages:
+    - texlive-latex-recommended
+    - texlive-latex-extra
+    - texlive-fonts-recommended
+    - latexmk
 
 # Build documentation using the copied conf.py
 sphinx:
