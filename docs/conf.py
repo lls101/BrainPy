@@ -127,7 +127,26 @@ thebe_config = {
     "repository_url": "https://github.com/binder-examples/jupyter-stacks-datascience",
     "repository_branch": "master",
 }
+# -- Options for LaTeX output ------------------------------------------------
 
+latex_elements = {
+    # 纸张大小 ('letterpaper' or 'a4paper').
+    'papersize': 'a4paper',
+
+    # 字体大小 ('10pt', '11pt' or '12pt').
+    'pointsize': '11pt',
+
+    # 额外的处理（例如去除空白页），如果需要支持中文，通常需要在这里配置 preamble
+    # 'preamble': '',
+}
+
+# Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title,
+#  author, documentclass [howto, manual, or own class]).
+latex_documents = [
+    ('index', 'MyProject.tex', 'My Project Documentation',
+     'Author Name', 'manual'),
+]
 # -- Options for myst ----------------------------------------------
 # Notebook cell execution timeout; defaults to 30.
 execution_timeout = 200
